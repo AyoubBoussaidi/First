@@ -5,7 +5,7 @@ const projectCtrls = require('../controllers/project/index.js');
 module.exports = function(router) {
   router.route('/project')
     .get(projectCtrls.project.list)// list retreive
-    .post(projectCtrls.project.create)//create
+    .post(projectCtrls.project.create)//create //
 
   router.route('/user/project')
     .get(projectCtrls.project.listForEachUser)
